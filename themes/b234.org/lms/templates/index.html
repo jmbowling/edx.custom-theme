@@ -14,7 +14,13 @@ from openedx.core.djangolib.markup import HTML, Text
   ## john 02/09/2019 background-image
   .home>header {
     background-color: white !important;
-
+    background-image:   url("${static.url("images/banner.jpg")}");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 
   }
 
@@ -24,13 +30,7 @@ from openedx.core.djangolib.markup import HTML, Text
     min-height: 400 px;
     color: #f1f1f1;
 
-  background-image:   url("${static.url("images/banner.jpg")}");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+
 }
 
 
