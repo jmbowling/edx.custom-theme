@@ -93,12 +93,11 @@
               ## can be included in the footer on other sites
               ## (e.g. a blog or marketing front-end) to provide a consistent
               ## user experience.  See the branding app for details.
-              <img alt="organization logo" src="${footer['logo_image']}">
 
               ## john Feb-2019
               ##
-              ##
-              <img  src="${static.url("images/logo-bolles-school.png")}" alt="The Bolles School Logo"/>
+              ##<img alt="organization logo" src="${footer['logo_image']}">
+              <img  src="${static.url("images/logo-bolles-school.png")}" alt="The Bolles School Logo"/ width="42" height="42" >
             </a>
           </p>
         </div>
@@ -122,7 +121,7 @@
       ## The OpenEdX link may be hidden when this view is served
       ## through an API to partner sites (such as marketing sites or blogs),
       ## which are not technically powered by OpenEdX.
-    
+
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
         <p>
