@@ -14,12 +14,13 @@ from openedx.core.djangolib.markup import HTML, Text
   ## john 02/09/2019 background-image
   .home>header {
     background-color: green !important;
-    background-image:   url("${static.url("images/banner.jpg")}")
+    background-image:   url("${static.url("images/banner.jpg")}");
+    background-size: contain;
   }
 
   .title {
     background: 0;
-    opacity: 0.6;
+    opacity: 0.3;
     min-height: 200 px;
     color: #f1f1f1;
   }
